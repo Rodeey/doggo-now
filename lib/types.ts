@@ -1,59 +1,34 @@
 // lib/types.ts
 
-export type LinkSet = {
+export type Links = {
   google?: string | null;
   yelp?: string | null;
-  tiktokSearch?: string | null;
   website?: string | null;
-};
-
-export type HoursRange = {
-  open: string;   // "08:00"
-  close: string;  // "22:00"
-};
-
-export type WeeklyHours = {
-  // 0 = Sunday ... 6 = Saturday
-  [weekday: number]: HoursRange[] | null; // null if closed
+  tiktokSearch?: string | null;
 };
 
 export type Place = {
-  id: string;
+  id?: string | number;
   name: string;
 
-  // Address
+  // primary fields used by the app
+  category?: string | null;
+  subcategories?: string[];
   address?: string | null;
-  city?: string | null;
-  state?: string | null;
-  postalCode?: string | null;
 
-  // Coordinates (primary)
-  latitude: number;
-  longitude: number;
-
-  // Coordinates (legacy fields some components use)
+  // main coordinates used in components
   lat?: number | null;
   lng?: number | null;
 
-  // Categorization
-  category?: string | null;           // e.g., "Cafe", "Bar", "Park"
-  subcategories?: string[];
-  dogFriendly?: "yes" | "likely" | "unknown" | "no";
+  // legacy/compat coordinates (OPTIONAL on purpose)
+  latitude?: number;
+  longitude?: number;
 
-  // Media / description
   imageUrl?: string | null;
-  description?: string | null;
+  links?: Links;
 
-  // External links
-  links?: LinkSet;
+  opens_at?: string | null;
+  closes_at?: string | null;
 
-  // Hours (support both simple + detailed shapes)
-  opens_at?: string | null;           // e.g., "08:00"
-  closes_at?: string | null;          // e.g., "22:00"
-  hours?: WeeklyHours;
-  openNow?: boolean;
-
-  // Optional scoring/metadata
-  confidenceScore?: number;           // 0..1
-  updatedAt?: string;                 // ISO timestamp
+  dogFriendly?: "yes" | "no" | "patio" | "unknown";
 };
