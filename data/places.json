@@ -1,245 +1,2148 @@
 [
   {
-    "id": 101,
-    "name": "Midnight Paws Caf\u00e9",
-    "category": "Cafe",
-    "address": "123 Main St, Detroit, MI 48201",
-    "lat": 42.3314,
-    "lng": -83.0458,
-    "dog_friendly": true,
-    "always_open": true,
-    "phone": "(313) 555-1001",
-    "image_url": "https://source.unsplash.com/featured/?cafe,dog",
-    "open_hours": {
-      "Monday": [
-        "00:00",
-        "23:59"
-      ],
-      "Tuesday": [
-        "00:00",
-        "23:59"
-      ],
-      "Wednesday": [
-        "00:00",
-        "23:59"
-      ],
-      "Thursday": [
-        "00:00",
-        "23:59"
-      ],
-      "Friday": [
-        "00:00",
-        "23:59"
-      ],
-      "Saturday": [
-        "00:00",
-        "23:59"
-      ],
-      "Sunday": [
-        "00:00",
-        "23:59"
-      ]
-    }
-  },
-  {
-    "id": 102,
-    "name": "24/7 Barkside Bar",
-    "category": "Bar",
-    "address": "456 Elm St, Detroit, MI 48201",
-    "lat": 42.3345,
-    "lng": -83.0499,
-    "dog_friendly": true,
-    "always_open": true,
-    "phone": "(313) 555-1002",
-    "image_url": "https://source.unsplash.com/featured/?bar,dog",
-    "open_hours": {
-      "Monday": [
-        "00:00",
-        "23:59"
-      ],
-      "Tuesday": [
-        "00:00",
-        "23:59"
-      ],
-      "Wednesday": [
-        "00:00",
-        "23:59"
-      ],
-      "Thursday": [
-        "00:00",
-        "23:59"
-      ],
-      "Friday": [
-        "00:00",
-        "23:59"
-      ],
-      "Saturday": [
-        "00:00",
-        "23:59"
-      ],
-      "Sunday": [
-        "00:00",
-        "23:59"
-      ]
-    }
-  },
-  {
     "id": 1,
-    "name": "Detroit Shipping Company",
-    "category": "Bar",
-    "address": "474 Peterboro St, Detroit, MI 48201",
-    "lat": 42.3486,
-    "lng": -83.0626,
-    "dog_friendly": true,
-    "always_open": false,
-    "phone": "(313) 462-4973",
-    "image_url": "https://images.unsplash.com/photo-restaurant-bar",
-    "open_hours": {
-      "Monday": [
-        "12:00",
-        "22:00"
-      ],
-      "Tuesday": [
-        "12:00",
-        "22:00"
-      ],
-      "Wednesday": [
-        "12:00",
-        "22:00"
-      ],
-      "Thursday": [
-        "12:00",
-        "22:00"
-      ],
-      "Friday": [
-        "12:00",
-        "23:59"
-      ],
-      "Saturday": [
-        "12:00",
-        "23:59"
-      ],
-      "Sunday": [
-        "12:00",
-        "20:00"
-      ]
-    }
+    "name": "Mercury Burger & Bar",
+    "category": "Restaurant",
+    "image": "/media/dogs/fallback.jpg",
+    "address": "2163 Michigan Ave, Detroit, MI 48216",
+    "tags": [],
+    "lat": 42.3301,
+    "lng": -83.0732,
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Mercury+Burger+%26+Bar+2163+Michigan+Ave%2C+Detroit%2C+MI+48216",
+    "yelpUrl": "https://www.yelp.com/search?find_desc=Mercury+Burger+%26+Bar&find_loc=Detroit%2C+MI",
+    "hours": {
+      "Sunday": {
+        "open": "11:00",
+        "close": "21:00"
+      },
+      "Monday": {
+        "open": "11:00",
+        "close": "21:00"
+      },
+      "Tuesday": {
+        "open": "11:00",
+        "close": "21:00"
+      },
+      "Wednesday": {
+        "open": "11:00",
+        "close": "21:00"
+      },
+      "Thursday": {
+        "open": "11:00",
+        "close": "23:59"
+      },
+      "Friday": {
+        "open": "11:00",
+        "close": "23:59"
+      },
+      "Saturday": {
+        "open": "11:00",
+        "close": "23:59"
+      }
+    },
+    "website": "https://www.mercuryburgerbar.com"
   },
   {
     "id": 2,
-    "name": "Eastern Market Brewing Co.",
-    "category": "Bar",
-    "address": "2515 Riopelle St, Detroit, MI 48207",
-    "lat": 42.3482,
-    "lng": -83.0402,
-    "dog_friendly": true,
-    "always_open": false,
-    "phone": "(313) 502-5165",
-    "image_url": "https://images.unsplash.com/photo-brewery",
-    "open_hours": {
-      "Monday": [],
-      "Tuesday": [
-        "16:00",
-        "22:00"
-      ],
-      "Wednesday": [
-        "16:00",
-        "22:00"
-      ],
-      "Thursday": [
-        "16:00",
-        "22:00"
-      ],
-      "Friday": [
-        "14:00",
-        "23:00"
-      ],
-      "Saturday": [
-        "12:00",
-        "23:59"
-      ],
-      "Sunday": [
-        "12:00",
-        "20:00"
-      ]
-    }
+    "name": "Motor City Brewing Works",
+    "category": "Bar/Brewery",
+    "image": "/media/dogs/dog_bday.jpg",
+    "address": "470 W Canfield St, Detroit, MI 48201",
+    "tags": [],
+    "lat": 42.3372,
+    "lng": -83.0705,
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Motor+City+Brewing+Works+470+W+Canfield+St%2C+Detroit%2C+MI+48201",
+    "yelpUrl": "https://www.yelp.com/search?find_desc=Motor+City+Brewing+Works&find_loc=Detroit%2C+MI",
+    "hours": {
+      "Sunday": {
+        "open": "12:00",
+        "close": "23:59"
+      },
+      "Monday": {
+        "open": "11:00",
+        "close": "23:59"
+      },
+      "Tuesday": {
+        "open": "11:00",
+        "close": "23:59"
+      },
+      "Wednesday": {
+        "open": "11:00",
+        "close": "23:59"
+      },
+      "Thursday": {
+        "open": "11:00",
+        "close": "23:59"
+      },
+      "Friday": {
+        "open": "11:00",
+        "close": "23:59"
+      },
+      "Saturday": {
+        "open": "11:00",
+        "close": "23:59"
+      }
+    },
+    "website": "https://motorcitybeer.com"
   },
   {
     "id": 3,
     "name": "Batch Brewing Company",
-    "category": "Bar",
-    "address": "1400 Porter St, Detroit, MI 48216",
-    "lat": 42.3257,
-    "lng": -83.0732,
-    "dog_friendly": true,
-    "always_open": false,
-    "phone": "(313) 338-8008",
-    "image_url": "https://images.unsplash.com/photo-batchbrew",
-    "open_hours": {
-      "Monday": [],
-      "Tuesday": [
-        "16:00",
-        "22:00"
-      ],
-      "Wednesday": [
-        "16:00",
-        "22:00"
-      ],
-      "Thursday": [
-        "16:00",
-        "22:00"
-      ],
-      "Friday": [
-        "16:00",
-        "23:00"
-      ],
-      "Saturday": [
-        "12:00",
-        "23:59"
-      ],
-      "Sunday": [
-        "12:00",
-        "21:00"
-      ]
-    }
+    "category": "Bar/Brewery",
+    "image": "/media/dogs/dog_chillin.jpg",
+    "address": "727 W Canfield St, Detroit, MI 48201",
+    "tags": [],
+    "lat": 42.3359,
+    "lng": -83.0722,
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Batch+Brewing+Company+727+W+Canfield+St%2C+Detroit%2C+MI+48201",
+    "yelpUrl": "https://www.yelp.com/search?find_desc=Batch+Brewing+Company&find_loc=Detroit%2C+MI",
+    "hours": {
+      "Tuesday": {
+        "open": "16:00",
+        "close": "23:00"
+      },
+      "Wednesday": {
+        "open": "16:00",
+        "close": "23:00"
+      },
+      "Thursday": {
+        "open": "16:00",
+        "close": "23:00"
+      },
+      "Friday": {
+        "open": "12:00",
+        "close": "23:59"
+      },
+      "Saturday": {
+        "open": "12:00",
+        "close": "23:59"
+      },
+      "Sunday": {
+        "open": "12:00",
+        "close": "20:00"
+      }
+    },
+    "website": "https://www.batchbrewingcompany.com"
   },
   {
     "id": 4,
-    "name": "Motor City Wine",
+    "name": "Andiamo Riverfront",
+    "category": "Restaurant",
+    "image": "/media/dogs/dog_coffee.jpg",
+    "address": "400 Renaissance Center, Detroit, MI 48243",
+    "tags": [],
+    "lat": 42.329,
+    "lng": -83.0539,
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Andiamo+Riverfront+400+Renaissance+Center%2C+Detroit%2C+MI+48243",
+    "yelpUrl": "https://www.yelp.com/search?find_desc=Andiamo+Riverfront&find_loc=Detroit%2C+MI",
+    "hours": {
+      "Sunday": {
+        "open": "10:00",
+        "close": "15:00"
+      },
+      "Monday": {
+        "open": "Closed",
+        "close": "Closed"
+      },
+      "Tuesday": {
+        "open": "7:00",
+        "close": "15:00"
+      },
+      "Wednesday": {
+        "open": "7:00",
+        "close": "15:00"
+      },
+      "Thursday": {
+        "open": "7:00",
+        "close": "15:00"
+      },
+      "Friday": {
+        "open": "7:00",
+        "close": "15:00"
+      },
+      "Saturday": {
+        "open": "8:00",
+        "close": "15:00"
+      }
+    },
+    "website": "https://andiamoitalia.com/riverfront"
+  },
+  {
+    "id": 5,
+    "name": "Jolly Pumpkin Detroit",
+    "category": "Bar/Brewery",
+    "image": "/media/dogs/dog_hammock.jpg",
+    "address": "1455 Gratiot Ave, Detroit, MI 48207",
+    "tags": [],
+    "lat": 42.3536,
+    "lng": -83.0605,
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Jolly+Pumpkin+Detroit+1455+Gratiot+Ave%2C+Detroit%2C+MI+48207",
+    "yelpUrl": "https://www.yelp.com/search?find_desc=Jolly+Pumpkin+Detroit&find_loc=Detroit%2C+MI",
+    "hours": {
+      "Sunday": {
+        "open": "Closed",
+        "close": "Closed"
+      },
+      "Monday": {
+        "open": "8:00",
+        "close": "14:00"
+      },
+      "Tuesday": {
+        "open": "8:00",
+        "close": "14:00"
+      },
+      "Wednesday": {
+        "open": "8:00",
+        "close": "14:00"
+      },
+      "Thursday": {
+        "open": "8:00",
+        "close": "14:00"
+      },
+      "Friday": {
+        "open": "8:00",
+        "close": "14:00"
+      },
+      "Saturday": {
+        "open": "9:00",
+        "close": "14:00"
+      }
+    },
+    "website": "https://www.jollypumpkin.com"
+  },
+  {
+    "id": 6,
+    "name": "Brooklyn Street Local",
+    "category": "Restaurant",
+    "image": "/media/dogs/dog_shades.jpg",
+    "address": "1067 W Lafayette Blvd, Detroit, MI 48226",
+    "tags": [],
+    "lat": 42.3357,
+    "lng": -83.0509,
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Brooklyn+Street+Local+1067+W+Lafayette+Blvd%2C+Detroit%2C+MI+48226",
+    "yelpUrl": "https://www.yelp.com/search?find_desc=Brooklyn+Street+Local&find_loc=Detroit%2C+MI",
+    "hours": {
+      "Sunday": {
+        "open": "Closed",
+        "close": "Closed"
+      },
+      "Monday": {
+        "open": "7:00",
+        "close": "15:00"
+      },
+      "Tuesday": {
+        "open": "7:00",
+        "close": "15:00"
+      },
+      "Wednesday": {
+        "open": "7:00",
+        "close": "15:00"
+      },
+      "Thursday": {
+        "open": "7:00",
+        "close": "15:00"
+      },
+      "Friday": {
+        "open": "7:00",
+        "close": "15:00"
+      },
+      "Saturday": {
+        "open": "8:00",
+        "close": "15:00"
+      }
+    },
+    "website": "https://brooklynstreetlocal.com"
+  },
+  {
+    "id": 7,
+    "name": "Germack Coffee & Tea Shop",
+    "category": "Cafe",
+    "image": "/media/dogs/dog_tongue.jpg",
+    "address": "109 E Grand Blvd, Detroit, MI 48207",
+    "tags": [],
+    "lat": 42.3304,
+    "lng": -83.0544,
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Germack+Coffee+%26+Tea+Shop+109+E+Grand+Blvd%2C+Detroit%2C+MI+48207",
+    "yelpUrl": "https://www.yelp.com/search?find_desc=Germack+Coffee+%26+Tea+Shop&find_loc=Detroit%2C+MI",
+    "hours": {
+      "Sunday": {
+        "open": "10:00",
+        "close": "18:00"
+      },
+      "Monday": {
+        "open": "7:00",
+        "close": "18:00"
+      },
+      "Tuesday": {
+        "open": "7:00",
+        "close": "18:00"
+      },
+      "Wednesday": {
+        "open": "7:00",
+        "close": "18:00"
+      },
+      "Thursday": {
+        "open": "7:00",
+        "close": "18:00"
+      },
+      "Friday": {
+        "open": "7:00",
+        "close": "18:00"
+      },
+      "Saturday": {
+        "open": "8:00",
+        "close": "18:00"
+      }
+    },
+    "website": "https://germack.com"
+  },
+  {
+    "id": 8,
+    "name": "PJ's Lager House",
     "category": "Bar",
+    "image": "/media/dogs/happy_dogs.jpg",
+    "address": "58 Frank St, Detroit, MI 48226",
+    "tags": [],
+    "lat": 42.3368,
+    "lng": -83.0502,
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=PJ%27s+Lager+House+58+Frank+St%2C+Detroit%2C+MI+48226",
+    "yelpUrl": "https://www.yelp.com/search?find_desc=PJ%27s+Lager+House&find_loc=Detroit%2C+MI",
+    "hours": {
+      "Sunday": {
+        "open": "9:00",
+        "close": "15:00"
+      },
+      "Monday": {
+        "open": "Closed",
+        "close": "Closed"
+      },
+      "Tuesday": {
+        "open": "7:00",
+        "close": "15:00"
+      },
+      "Wednesday": {
+        "open": "7:00",
+        "close": "15:00"
+      },
+      "Thursday": {
+        "open": "7:00",
+        "close": "15:00"
+      },
+      "Friday": {
+        "open": "7:00",
+        "close": "15:00"
+      },
+      "Saturday": {
+        "open": "8:00",
+        "close": "15:00"
+      }
+    },
+    "website": "https://pjslagerhouse.com"
+  },
+  {
+    "id": 9,
+    "name": "Detroit Shipping Company",
+    "category": "Restaurant/Food Hall",
+    "image": "/media/dogs/fallback.jpg",
+    "address": "474 Peterboro St, Detroit, MI 48201",
+    "tags": [],
+    "lat": 42.3395,
+    "lng": -83.0513,
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Detroit+Shipping+Company+474+Peterboro+St%2C+Detroit%2C+MI+48201",
+    "yelpUrl": "https://www.yelp.com/search?find_desc=Detroit+Shipping+Company&find_loc=Detroit%2C+MI",
+    "hours": {
+      "Sunday": {
+        "open": "9:00",
+        "close": "21:00"
+      },
+      "Monday": {
+        "open": "7:00",
+        "close": "21:00"
+      },
+      "Tuesday": {
+        "open": "7:00",
+        "close": "21:00"
+      },
+      "Wednesday": {
+        "open": "7:00",
+        "close": "21:00"
+      },
+      "Thursday": {
+        "open": "7:00",
+        "close": "21:00"
+      },
+      "Friday": {
+        "open": "7:00",
+        "close": "23:59"
+      },
+      "Saturday": {
+        "open": "8:00",
+        "close": "23:59"
+      }
+    },
+    "website": "https://detroitshippingcompany.com"
+  },
+  {
+    "id": 10,
+    "name": "Eastern Market Brewing Co.",
+    "category": "Bar/Brewery",
+    "image": "/media/dogs/fallback.jpg",
+    "address": "2516 Riopelle St, Detroit, MI 48207",
+    "tags": [],
+    "lat": 42.361,
+    "lng": -83.0474,
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Eastern+Market+Brewing+Co.+2516+Riopelle+St%2C+Detroit%2C+MI+48207",
+    "yelpUrl": "https://www.yelp.com/search?find_desc=Eastern+Market+Brewing+Co.&find_loc=Detroit%2C+MI",
+    "hours": {
+      "Sunday": {
+        "open": "10:00",
+        "close": "17:00"
+      },
+      "Monday": {
+        "open": "8:00",
+        "close": "18:00"
+      },
+      "Tuesday": {
+        "open": "8:00",
+        "close": "18:00"
+      },
+      "Wednesday": {
+        "open": "8:00",
+        "close": "18:00"
+      },
+      "Thursday": {
+        "open": "8:00",
+        "close": "18:00"
+      },
+      "Friday": {
+        "open": "8:00",
+        "close": "18:00"
+      },
+      "Saturday": {
+        "open": "9:00",
+        "close": "17:00"
+      }
+    },
+    "website": "https://easternmarket.beer"
+  },
+  {
+    "id": 11,
+    "name": "Frita Batidos Detroit",
+    "category": "Restaurant",
+    "image": "/media/dogs/fallback.jpg",
+    "address": "430 W Canfield St, Detroit, MI 48201",
+    "tags": [],
+    "lat": 42.3358,
+    "lng": -83.0706,
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Frita+Batidos+Detroit+430+W+Canfield+St%2C+Detroit%2C+MI+48201",
+    "yelpUrl": "https://www.yelp.com/search?find_desc=Frita+Batidos+Detroit&find_loc=Detroit%2C+MI",
+    "hours": {
+      "Sunday": {
+        "open": "10:00",
+        "close": "15:00"
+      },
+      "Monday": {
+        "open": "Closed",
+        "close": "Closed"
+      },
+      "Tuesday": {
+        "open": "7:00",
+        "close": "15:00"
+      },
+      "Wednesday": {
+        "open": "7:00",
+        "close": "15:00"
+      },
+      "Thursday": {
+        "open": "7:00",
+        "close": "15:00"
+      },
+      "Friday": {
+        "open": "7:00",
+        "close": "15:00"
+      },
+      "Saturday": {
+        "open": "8:00",
+        "close": "15:00"
+      }
+    },
+    "website": "https://fritabatidos.com"
+  },
+  {
+    "id": 12,
+    "name": "Socra Tea",
+    "category": "Cafe",
+    "image": "/media/dogs/fallback.jpg",
+    "address": "1516 Gratiot Ave, Detroit, MI 48207",
+    "tags": [],
+    "lat": 42.3535,
+    "lng": -83.0601,
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Socra+Tea+1516+Gratiot+Ave%2C+Detroit%2C+MI+48207",
+    "yelpUrl": "https://www.yelp.com/search?find_desc=Socra+Tea&find_loc=Detroit%2C+MI",
+    "hours": {
+      "Sunday": {
+        "open": "9:00",
+        "close": "14:00"
+      },
+      "Monday": {
+        "open": "Closed",
+        "close": "Closed"
+      },
+      "Tuesday": {
+        "open": "7:00",
+        "close": "14:00"
+      },
+      "Wednesday": {
+        "open": "7:00",
+        "close": "14:00"
+      },
+      "Thursday": {
+        "open": "7:00",
+        "close": "14:00"
+      },
+      "Friday": {
+        "open": "7:00",
+        "close": "14:00"
+      },
+      "Saturday": {
+        "open": "8:00",
+        "close": "14:00"
+      }
+    },
+    "website": "https://socratea.com"
+  },
+  {
+    "id": 13,
+    "name": "Detroit Fleat",
+    "category": "Food Truck Park",
+    "image": "/media/dogs/fallback.jpg",
+    "address": "2300 Franklin St, Detroit, MI 48207",
+    "tags": [],
+    "lat": 42.3628,
+    "lng": -83.0649,
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Detroit+Fleat+2300+Franklin+St%2C+Detroit%2C+MI+48207",
+    "yelpUrl": "https://www.yelp.com/search?find_desc=Detroit+Fleat&find_loc=Detroit%2C+MI",
+    "hours": {
+      "Sunday": {
+        "open": "8:00",
+        "close": "20:00"
+      },
+      "Monday": {
+        "open": "7:00",
+        "close": "20:00"
+      },
+      "Tuesday": {
+        "open": "7:00",
+        "close": "20:00"
+      },
+      "Wednesday": {
+        "open": "7:00",
+        "close": "20:00"
+      },
+      "Thursday": {
+        "open": "7:00",
+        "close": "20:00"
+      },
+      "Friday": {
+        "open": "7:00",
+        "close": "21:00"
+      },
+      "Saturday": {
+        "open": "8:00",
+        "close": "21:00"
+      }
+    },
+    "website": "https://detroitfleat.com"
+  },
+  {
+    "id": 14,
+    "name": "Urbanrest Brewing Co.",
+    "category": "Bar/Brewery",
+    "image": "/media/dogs/fallback.jpg",
+    "address": "2425 Gratiot Ave, Detroit, MI 48207",
+    "tags": [],
+    "lat": 42.3561,
+    "lng": -83.0592,
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Urbanrest+Brewing+Co.+2425+Gratiot+Ave%2C+Detroit%2C+MI+48207",
+    "yelpUrl": "https://www.yelp.com/search?find_desc=Urbanrest+Brewing+Co.&find_loc=Detroit%2C+MI",
+    "hours": {
+      "Sunday": {
+        "open": "9:00",
+        "close": "16:00"
+      },
+      "Monday": {
+        "open": "Closed",
+        "close": "Closed"
+      },
+      "Tuesday": {
+        "open": "7:00",
+        "close": "16:00"
+      },
+      "Wednesday": {
+        "open": "7:00",
+        "close": "16:00"
+      },
+      "Thursday": {
+        "open": "7:00",
+        "close": "16:00"
+      },
+      "Friday": {
+        "open": "7:00",
+        "close": "16:00"
+      },
+      "Saturday": {
+        "open": "8:00",
+        "close": "16:00"
+      }
+    },
+    "website": "https://urbanrest.com"
+  },
+  {
+    "id": 15,
+    "name": "Como\u2019s (Ferndale)",
+    "category": "Restaurant",
+    "image": "/media/dogs/fallback.jpg",
+    "address": "22932 Woodward Ave, Ferndale, MI 48220",
+    "tags": [],
+    "lat": 42.4515,
+    "lng": -83.1383,
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Como%E2%80%99s+%28Ferndale%29+22932+Woodward+Ave%2C+Ferndale%2C+MI+48220",
+    "yelpUrl": "https://www.yelp.com/search?find_desc=Como%E2%80%99s+%28Ferndale%29&find_loc=Ferndale%2C+MI",
+    "hours": {
+      "Sunday": {
+        "open": "10:00",
+        "close": "14:00"
+      },
+      "Monday": {
+        "open": "Closed",
+        "close": "Closed"
+      },
+      "Tuesday": {
+        "open": "8:00",
+        "close": "14:00"
+      },
+      "Wednesday": {
+        "open": "8:00",
+        "close": "14:00"
+      },
+      "Thursday": {
+        "open": "8:00",
+        "close": "14:00"
+      },
+      "Friday": {
+        "open": "8:00",
+        "close": "14:00"
+      },
+      "Saturday": {
+        "open": "9:00",
+        "close": "14:00"
+      }
+    },
+    "website": "https://comosrestaurant.com"
+  },
+  {
+    "id": 16,
+    "name": "Port (Ferndale)",
+    "category": "Bar",
+    "image": "/media/dogs/fallback.jpg",
+    "address": "22969 Woodward Ave, Ferndale, MI 48220",
+    "tags": [],
+    "lat": 42.4519,
+    "lng": -83.1375,
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Port+%28Ferndale%29+22969+Woodward+Ave%2C+Ferndale%2C+MI+48220",
+    "yelpUrl": "https://www.yelp.com/search?find_desc=Port+%28Ferndale%29&find_loc=Ferndale%2C+MI",
+    "hours": {
+      "Sunday": {
+        "open": "9:00",
+        "close": "15:00"
+      },
+      "Monday": {
+        "open": "Closed",
+        "close": "Closed"
+      },
+      "Tuesday": {
+        "open": "7:00",
+        "close": "15:00"
+      },
+      "Wednesday": {
+        "open": "7:00",
+        "close": "15:00"
+      },
+      "Thursday": {
+        "open": "7:00",
+        "close": "15:00"
+      },
+      "Friday": {
+        "open": "7:00",
+        "close": "15:00"
+      },
+      "Saturday": {
+        "open": "8:00",
+        "close": "15:00"
+      }
+    },
+    "website": "https://portferndale.com"
+  },
+  {
+    "id": 17,
+    "name": "The Congregation",
+    "category": "Bar/Restaurant",
+    "image": "/media/dogs/fallback.jpg",
+    "address": "1761 Monroe St, Detroit, MI 48207",
+    "tags": [],
+    "lat": 42.336,
+    "lng": -83.0537,
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=The+Congregation+1761+Monroe+St%2C+Detroit%2C+MI+48207",
+    "yelpUrl": "https://www.yelp.com/search?find_desc=The+Congregation&find_loc=Detroit%2C+MI",
+    "hours": {
+      "Sunday": {
+        "open": "10:00",
+        "close": "20:00"
+      },
+      "Monday": {
+        "open": "11:00",
+        "close": "20:00"
+      },
+      "Tuesday": {
+        "open": "11:00",
+        "close": "20:00"
+      },
+      "Wednesday": {
+        "open": "11:00",
+        "close": "20:00"
+      },
+      "Thursday": {
+        "open": "11:00",
+        "close": "20:00"
+      },
+      "Friday": {
+        "open": "11:00",
+        "close": "22:00"
+      },
+      "Saturday": {
+        "open": "11:00",
+        "close": "22:00"
+      }
+    },
+    "website": "https://thecongregationdetroit.com"
+  },
+  {
+    "id": 18,
+    "name": "Two Birds Michigan Ave",
+    "category": "Bar",
+    "image": "/media/dogs/fallback.jpg",
+    "address": "830 Michigan Ave, Detroit, MI 48226",
+    "tags": [],
+    "lat": 42.3352,
+    "lng": -83.0627,
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Two+Birds+Michigan+Ave+830+Michigan+Ave%2C+Detroit%2C+MI+48226",
+    "yelpUrl": "https://www.yelp.com/search?find_desc=Two+Birds+Michigan+Ave&find_loc=Detroit%2C+MI",
+    "hours": {
+      "Sunday": {
+        "open": "8:00",
+        "close": "14:00"
+      },
+      "Monday": {
+        "open": "Closed",
+        "close": "Closed"
+      },
+      "Tuesday": {
+        "open": "7:00",
+        "close": "14:00"
+      },
+      "Wednesday": {
+        "open": "7:00",
+        "close": "14:00"
+      },
+      "Thursday": {
+        "open": "7:00",
+        "close": "14:00"
+      },
+      "Friday": {
+        "open": "7:00",
+        "close": "14:00"
+      },
+      "Saturday": {
+        "open": "8:00",
+        "close": "14:00"
+      }
+    },
+    "website": "https://twobirdsdetroit.com"
+  },
+  {
+    "id": 19,
+    "name": "The Skip",
+    "category": "Bar",
+    "image": "/media/dogs/fallback.jpg",
+    "address": "1400 Broadway St, Detroit, MI 48226",
+    "tags": [],
+    "lat": 42.3382,
+    "lng": -83.0399,
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=The+Skip+1400+Broadway+St%2C+Detroit%2C+MI+48226",
+    "yelpUrl": "https://www.yelp.com/search?find_desc=The+Skip&find_loc=Detroit%2C+MI",
+    "hours": {
+      "Sunday": {
+        "open": "9:00",
+        "close": "17:00"
+      },
+      "Monday": {
+        "open": "8:00",
+        "close": "18:00"
+      },
+      "Tuesday": {
+        "open": "8:00",
+        "close": "18:00"
+      },
+      "Wednesday": {
+        "open": "8:00",
+        "close": "18:00"
+      },
+      "Thursday": {
+        "open": "8:00",
+        "close": "18:00"
+      },
+      "Friday": {
+        "open": "8:00",
+        "close": "18:00"
+      },
+      "Saturday": {
+        "open": "9:00",
+        "close": "17:00"
+      }
+    },
+    "website": "https://theskipdetroit.com"
+  },
+  {
+    "id": 20,
+    "name": "Stadt Garten",
+    "category": "Bar",
+    "image": "/media/dogs/fallback.jpg",
+    "address": "2511 Russell St, Detroit, MI 48207",
+    "tags": [],
+    "lat": 42.3602,
+    "lng": -83.0639,
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Stadt+Garten+2511+Russell+St%2C+Detroit%2C+MI+48207",
+    "yelpUrl": "https://www.yelp.com/search?find_desc=Stadt+Garten&find_loc=Detroit%2C+MI",
+    "hours": {
+      "Sunday": {
+        "open": "10:00",
+        "close": "15:00"
+      },
+      "Monday": {
+        "open": "Closed",
+        "close": "Closed"
+      },
+      "Tuesday": {
+        "open": "7:00",
+        "close": "15:00"
+      },
+      "Wednesday": {
+        "open": "7:00",
+        "close": "15:00"
+      },
+      "Thursday": {
+        "open": "7:00",
+        "close": "15:00"
+      },
+      "Friday": {
+        "open": "7:00",
+        "close": "15:00"
+      },
+      "Saturday": {
+        "open": "8:00",
+        "close": "15:00"
+      }
+    },
+    "website": "https://stadtgartendetroit.com"
+  },
+  {
+    "id": 21,
+    "name": "Woodbridge Pub",
+    "category": "Bar",
+    "image": "/media/dogs/fallback.jpg",
+    "address": "2823 W Grand Blvd, Detroit, MI 48208",
+    "tags": [],
+    "lat": 42.365,
+    "lng": -83.1345,
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Woodbridge+Pub+2823+W+Grand+Blvd%2C+Detroit%2C+MI+48208",
+    "yelpUrl": "https://www.yelp.com/search?find_desc=Woodbridge+Pub&find_loc=Detroit%2C+MI",
+    "hours": {
+      "Sunday": {
+        "open": "9:00",
+        "close": "14:00"
+      },
+      "Monday": {
+        "open": "Closed",
+        "close": "Closed"
+      },
+      "Tuesday": {
+        "open": "7:00",
+        "close": "14:00"
+      },
+      "Wednesday": {
+        "open": "7:00",
+        "close": "14:00"
+      },
+      "Thursday": {
+        "open": "7:00",
+        "close": "14:00"
+      },
+      "Friday": {
+        "open": "7:00",
+        "close": "14:00"
+      },
+      "Saturday": {
+        "open": "8:00",
+        "close": "14:00"
+      }
+    },
+    "website": null
+  },
+  {
+    "id": 22,
+    "name": "Atwater Brewery & Tap House",
+    "category": "Bar/Brewery",
+    "image": "/media/dogs/fallback.jpg",
+    "address": "237 Jos Campau Ave, Detroit, MI 48207",
+    "tags": [],
+    "lat": 42.3556,
+    "lng": -83.0592,
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Atwater+Brewery+%26+Tap+House+237+Jos+Campau+Ave%2C+Detroit%2C+MI+48207",
+    "yelpUrl": "https://www.yelp.com/search?find_desc=Atwater+Brewery+%26+Tap+House&find_loc=Detroit%2C+MI",
+    "hours": {
+      "Sunday": {
+        "open": "10:00",
+        "close": "18:00"
+      },
+      "Monday": {
+        "open": "7:00",
+        "close": "18:00"
+      },
+      "Tuesday": {
+        "open": "7:00",
+        "close": "18:00"
+      },
+      "Wednesday": {
+        "open": "7:00",
+        "close": "18:00"
+      },
+      "Thursday": {
+        "open": "7:00",
+        "close": "18:00"
+      },
+      "Friday": {
+        "open": "7:00",
+        "close": "18:00"
+      },
+      "Saturday": {
+        "open": "8:00",
+        "close": "18:00"
+      }
+    },
+    "website": null
+  },
+  {
+    "id": 23,
+    "name": "Nancy Whiskey Pub",
+    "category": "Bar",
+    "image": "/media/dogs/fallback.jpg",
+    "address": "2976 Grand River Ave, Detroit, MI 48208",
+    "tags": [],
+    "lat": 42.3819,
+    "lng": -83.1341,
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Nancy+Whiskey+Pub+2976+Grand+River+Ave%2C+Detroit%2C+MI+48208",
+    "yelpUrl": "https://www.yelp.com/search?find_desc=Nancy+Whiskey+Pub&find_loc=Detroit%2C+MI",
+    "hours": {
+      "Sunday": {
+        "open": "8:00",
+        "close": "16:00"
+      },
+      "Monday": {
+        "open": "Closed",
+        "close": "Closed"
+      },
+      "Tuesday": {
+        "open": "7:00",
+        "close": "16:00"
+      },
+      "Wednesday": {
+        "open": "7:00",
+        "close": "16:00"
+      },
+      "Thursday": {
+        "open": "7:00",
+        "close": "16:00"
+      },
+      "Friday": {
+        "open": "7:00",
+        "close": "16:00"
+      },
+      "Saturday": {
+        "open": "8:00",
+        "close": "16:00"
+      }
+    },
+    "website": null
+  },
+  {
+    "id": 24,
+    "name": "Honest John\u2019s",
+    "category": "Bar",
+    "image": "/media/dogs/fallback.jpg",
+    "address": "2335 Division St, Detroit, MI 48216",
+    "tags": [],
+    "lat": 42.3563,
+    "lng": -83.0819,
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Honest+John%E2%80%99s+2335+Division+St%2C+Detroit%2C+MI+48216",
+    "yelpUrl": "https://www.yelp.com/search?find_desc=Honest+John%E2%80%99s&find_loc=Detroit%2C+MI",
+    "hours": {
+      "Sunday": {
+        "open": "9:00",
+        "close": "20:00"
+      },
+      "Monday": {
+        "open": "11:00",
+        "close": "20:00"
+      },
+      "Tuesday": {
+        "open": "11:00",
+        "close": "20:00"
+      },
+      "Wednesday": {
+        "open": "11:00",
+        "close": "20:00"
+      },
+      "Thursday": {
+        "open": "11:00",
+        "close": "20:00"
+      },
+      "Friday": {
+        "open": "11:00",
+        "close": "23:00"
+      },
+      "Saturday": {
+        "open": "11:00",
+        "close": "23:00"
+      }
+    },
+    "website": null
+  },
+  {
+    "id": 25,
+    "name": "Second Best",
+    "category": "Bar",
+    "image": "/media/dogs/fallback.jpg",
+    "address": "9401 Joseph Campau Ave, Hamtramck, MI 48212",
+    "tags": [],
+    "lat": 42.3839,
+    "lng": -83.0602,
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Second+Best+9401+Joseph+Campau+Ave%2C+Hamtramck%2C+MI+48212",
+    "yelpUrl": "https://www.yelp.com/search?find_desc=Second+Best&find_loc=Hamtramck%2C+MI",
+    "hours": {
+      "Sunday": {
+        "open": "10:00",
+        "close": "14:00"
+      },
+      "Monday": {
+        "open": "Closed",
+        "close": "Closed"
+      },
+      "Tuesday": {
+        "open": "8:00",
+        "close": "14:00"
+      },
+      "Wednesday": {
+        "open": "8:00",
+        "close": "14:00"
+      },
+      "Thursday": {
+        "open": "8:00",
+        "close": "14:00"
+      },
+      "Friday": {
+        "open": "8:00",
+        "close": "14:00"
+      },
+      "Saturday": {
+        "open": "9:00",
+        "close": "14:00"
+      }
+    },
+    "website": null
+  },
+  {
+    "id": 26,
+    "name": "Detroit Beer Co",
+    "category": "Bar/Brewery",
+    "image": "/media/dogs/fallback.jpg",
+    "address": "1529 Broadway St, Detroit, MI 48226",
+    "tags": [],
+    "lat": 42.3358,
+    "lng": -83.0485,
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Detroit+Beer+Co+1529+Broadway+St%2C+Detroit%2C+MI+48226",
+    "yelpUrl": "https://www.yelp.com/search?find_desc=Detroit+Beer+Co&find_loc=Detroit%2C+MI",
+    "hours": {
+      "Sunday": {
+        "open": "9:00",
+        "close": "15:00"
+      },
+      "Monday": {
+        "open": "Closed",
+        "close": "Closed"
+      },
+      "Tuesday": {
+        "open": "7:00",
+        "close": "15:00"
+      },
+      "Wednesday": {
+        "open": "7:00",
+        "close": "15:00"
+      },
+      "Thursday": {
+        "open": "7:00",
+        "close": "15:00"
+      },
+      "Friday": {
+        "open": "7:00",
+        "close": "15:00"
+      },
+      "Saturday": {
+        "open": "8:00",
+        "close": "15:00"
+      }
+    },
+    "website": null
+  },
+  {
+    "id": 27,
+    "name": "Caf\u00e9 D\u2019Mongo\u2019s Speakeasy",
+    "category": "Bar",
+    "image": "/media/dogs/fallback.jpg",
+    "address": "1439 Griswold St, Detroit, MI 48226",
+    "tags": [],
+    "lat": 42.3338,
+    "lng": -83.0482,
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Caf%C3%A9+D%E2%80%99Mongo%E2%80%99s+Speakeasy+1439+Griswold+St%2C+Detroit%2C+MI+48226",
+    "yelpUrl": "https://www.yelp.com/search?find_desc=Caf%C3%A9+D%E2%80%99Mongo%E2%80%99s+Speakeasy&find_loc=Detroit%2C+MI",
+    "hours": {
+      "Sunday": {
+        "open": "10:00",
+        "close": "22:00"
+      },
+      "Monday": {
+        "open": "11:00",
+        "close": "22:00"
+      },
+      "Tuesday": {
+        "open": "11:00",
+        "close": "22:00"
+      },
+      "Wednesday": {
+        "open": "11:00",
+        "close": "22:00"
+      },
+      "Thursday": {
+        "open": "11:00",
+        "close": "22:00"
+      },
+      "Friday": {
+        "open": "11:00",
+        "close": "23:59"
+      },
+      "Saturday": {
+        "open": "11:00",
+        "close": "23:59"
+      }
+    },
+    "website": null
+  },
+  {
+    "id": 28,
+    "name": "Frita Batidos Detroit",
+    "category": "Restaurant",
+    "image": "/media/dogs/fallback.jpg",
+    "address": "66 W Columbia St, Detroit, MI 48201",
+    "tags": [],
+    "lat": 42.3365,
+    "lng": -83.0499,
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Frita+Batidos+Detroit+66+W+Columbia+St%2C+Detroit%2C+MI+48201",
+    "yelpUrl": "https://www.yelp.com/search?find_desc=Frita+Batidos+Detroit&find_loc=Detroit%2C+MI",
+    "hours": {
+      "Sunday": {
+        "open": "8:00",
+        "close": "14:00"
+      },
+      "Monday": {
+        "open": "Closed",
+        "close": "Closed"
+      },
+      "Tuesday": {
+        "open": "7:00",
+        "close": "14:00"
+      },
+      "Wednesday": {
+        "open": "7:00",
+        "close": "14:00"
+      },
+      "Thursday": {
+        "open": "7:00",
+        "close": "14:00"
+      },
+      "Friday": {
+        "open": "7:00",
+        "close": "14:00"
+      },
+      "Saturday": {
+        "open": "8:00",
+        "close": "14:00"
+      }
+    },
+    "website": "https://fritabatidos.com"
+  },
+  {
+    "id": 29,
+    "name": "Socra Tea",
+    "category": "Cafe",
+    "image": "/media/dogs/fallback.jpg",
+    "address": "71 Garfield St, Detroit, MI 48201",
+    "tags": [],
+    "lat": 42.3537,
+    "lng": -83.0629,
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Socra+Tea+71+Garfield+St%2C+Detroit%2C+MI+48201",
+    "yelpUrl": "https://www.yelp.com/search?find_desc=Socra+Tea&find_loc=Detroit%2C+MI",
+    "hours": {
+      "Sunday": {
+        "open": "9:00",
+        "close": "20:00"
+      },
+      "Monday": {
+        "open": "11:00",
+        "close": "20:00"
+      },
+      "Tuesday": {
+        "open": "11:00",
+        "close": "20:00"
+      },
+      "Wednesday": {
+        "open": "11:00",
+        "close": "20:00"
+      },
+      "Thursday": {
+        "open": "11:00",
+        "close": "20:00"
+      },
+      "Friday": {
+        "open": "11:00",
+        "close": "22:00"
+      },
+      "Saturday": {
+        "open": "11:00",
+        "close": "22:00"
+      }
+    },
+    "website": "https://socratea.com"
+  },
+  {
+    "id": 30,
+    "name": "Detroit Fleat (Ferndale Food Truck Park)",
+    "category": "Food Truck Park",
+    "image": "/media/dogs/fallback.jpg",
+    "address": "1820 E 9 Mile Rd, Ferndale, MI 48220",
+    "tags": [],
+    "lat": 42.4603,
+    "lng": -83.1192,
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Detroit+Fleat+%28Ferndale+Food+Truck+Park%29+1820+E+9+Mile+Rd%2C+Ferndale%2C+MI+48220",
+    "yelpUrl": "https://www.yelp.com/search?find_desc=Detroit+Fleat+%28Ferndale+Food+Truck+Park%29&find_loc=Ferndale%2C+MI",
+    "hours": {
+      "Sunday": {
+        "open": "10:00",
+        "close": "17:00"
+      },
+      "Monday": {
+        "open": "8:00",
+        "close": "18:00"
+      },
+      "Tuesday": {
+        "open": "8:00",
+        "close": "18:00"
+      },
+      "Wednesday": {
+        "open": "8:00",
+        "close": "18:00"
+      },
+      "Thursday": {
+        "open": "8:00",
+        "close": "18:00"
+      },
+      "Friday": {
+        "open": "8:00",
+        "close": "18:00"
+      },
+      "Saturday": {
+        "open": "9:00",
+        "close": "17:00"
+      }
+    },
+    "website": null
+  },
+  {
+    "id": 31,
+    "name": "Urbanrest Brewing Company",
+    "category": "Bar/Brewery",
+    "image": "/media/dogs/fallback.jpg",
+    "address": "2615 Wolcott St, Ferndale, MI 48220",
+    "tags": [],
+    "lat": 42.4653,
+    "lng": -83.1311,
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Urbanrest+Brewing+Company+2615+Wolcott+St%2C+Ferndale%2C+MI+48220",
+    "yelpUrl": "https://www.yelp.com/search?find_desc=Urbanrest+Brewing+Company&find_loc=Ferndale%2C+MI",
+    "hours": {
+      "Sunday": {
+        "open": "9:00",
+        "close": "14:00"
+      },
+      "Monday": {
+        "open": "Closed",
+        "close": "Closed"
+      },
+      "Tuesday": {
+        "open": "7:00",
+        "close": "14:00"
+      },
+      "Wednesday": {
+        "open": "7:00",
+        "close": "14:00"
+      },
+      "Thursday": {
+        "open": "7:00",
+        "close": "14:00"
+      },
+      "Friday": {
+        "open": "7:00",
+        "close": "14:00"
+      },
+      "Saturday": {
+        "open": "8:00",
+        "close": "14:00"
+      }
+    },
+    "website": null
+  },
+  {
+    "id": 32,
+    "name": "Condado Tacos",
+    "category": "Restaurant",
+    "image": "/media/dogs/fallback.jpg",
+    "address": "634 Selden St, Detroit, MI 48201",
+    "tags": [],
+    "lat": 42.3496,
+    "lng": -83.061,
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Condado+Tacos+634+Selden+St%2C+Detroit%2C+MI+48201",
+    "yelpUrl": "https://www.yelp.com/search?find_desc=Condado+Tacos&find_loc=Detroit%2C+MI",
+    "hours": {
+      "Sunday": {
+        "open": "10:00",
+        "close": "18:00"
+      },
+      "Monday": {
+        "open": "7:00",
+        "close": "18:00"
+      },
+      "Tuesday": {
+        "open": "7:00",
+        "close": "18:00"
+      },
+      "Wednesday": {
+        "open": "7:00",
+        "close": "18:00"
+      },
+      "Thursday": {
+        "open": "7:00",
+        "close": "18:00"
+      },
+      "Friday": {
+        "open": "7:00",
+        "close": "18:00"
+      },
+      "Saturday": {
+        "open": "8:00",
+        "close": "18:00"
+      }
+    },
+    "website": null
+  },
+  {
+    "id": 33,
+    "name": "Takoi",
+    "category": "Restaurant",
+    "image": "/media/dogs/fallback.jpg",
+    "address": "2520 Michigan Ave, Detroit, MI 48216",
+    "tags": [],
+    "lat": 42.3298,
+    "lng": -83.0729,
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Takoi+2520+Michigan+Ave%2C+Detroit%2C+MI+48216",
+    "yelpUrl": "https://www.yelp.com/search?find_desc=Takoi&find_loc=Detroit%2C+MI",
+    "hours": {
+      "Sunday": {
+        "open": "8:00",
+        "close": "16:00"
+      },
+      "Monday": {
+        "open": "Closed",
+        "close": "Closed"
+      },
+      "Tuesday": {
+        "open": "7:00",
+        "close": "16:00"
+      },
+      "Wednesday": {
+        "open": "7:00",
+        "close": "16:00"
+      },
+      "Thursday": {
+        "open": "7:00",
+        "close": "16:00"
+      },
+      "Friday": {
+        "open": "7:00",
+        "close": "16:00"
+      },
+      "Saturday": {
+        "open": "8:00",
+        "close": "16:00"
+      }
+    },
+    "website": null
+  },
+  {
+    "id": 34,
+    "name": "Cork & Gabel",
+    "category": "Restaurant",
+    "image": "/media/dogs/fallback.jpg",
+    "address": "2415 Michigan Ave, Detroit, MI 48216",
+    "tags": [],
+    "lat": 42.3301,
+    "lng": -83.0736,
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Cork+%26+Gabel+2415+Michigan+Ave%2C+Detroit%2C+MI+48216",
+    "yelpUrl": "https://www.yelp.com/search?find_desc=Cork+%26+Gabel&find_loc=Detroit%2C+MI",
+    "hours": {
+      "Sunday": {
+        "open": "9:00",
+        "close": "21:00"
+      },
+      "Monday": {
+        "open": "11:00",
+        "close": "21:00"
+      },
+      "Tuesday": {
+        "open": "11:00",
+        "close": "21:00"
+      },
+      "Wednesday": {
+        "open": "11:00",
+        "close": "21:00"
+      },
+      "Thursday": {
+        "open": "11:00",
+        "close": "21:00"
+      },
+      "Friday": {
+        "open": "11:00",
+        "close": "23:59"
+      },
+      "Saturday": {
+        "open": "11:00",
+        "close": "23:59"
+      }
+    },
+    "website": null
+  },
+  {
+    "id": 35,
+    "name": "Momo Cha",
+    "category": "Cafe/Tea House",
+    "image": "/media/dogs/fallback.jpg",
+    "address": "4240 Cass Ave, Detroit, MI 48201",
+    "tags": [],
+    "lat": 42.3519,
+    "lng": -83.0645,
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Momo+Cha+4240+Cass+Ave%2C+Detroit%2C+MI+48201",
+    "yelpUrl": "https://www.yelp.com/search?find_desc=Momo+Cha&find_loc=Detroit%2C+MI",
+    "hours": {
+      "Sunday": {
+        "open": "10:00",
+        "close": "14:00"
+      },
+      "Monday": {
+        "open": "Closed",
+        "close": "Closed"
+      },
+      "Tuesday": {
+        "open": "8:00",
+        "close": "14:00"
+      },
+      "Wednesday": {
+        "open": "8:00",
+        "close": "14:00"
+      },
+      "Thursday": {
+        "open": "8:00",
+        "close": "14:00"
+      },
+      "Friday": {
+        "open": "8:00",
+        "close": "14:00"
+      },
+      "Saturday": {
+        "open": "9:00",
+        "close": "14:00"
+      }
+    },
+    "website": null
+  },
+  {
+    "id": 36,
+    "name": "Traffic Jam and Snug",
+    "category": "Restaurant/Brewpub",
+    "image": "/media/dogs/fallback.jpg",
+    "address": "511 W Canfield St, Detroit, MI 48201",
+    "tags": [],
+    "lat": 42.3536,
+    "lng": -83.0615,
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Traffic+Jam+and+Snug+511+W+Canfield+St%2C+Detroit%2C+MI+48201",
+    "yelpUrl": "https://www.yelp.com/search?find_desc=Traffic+Jam+and+Snug&find_loc=Detroit%2C+MI",
+    "hours": {
+      "Sunday": {
+        "open": "9:00",
+        "close": "15:00"
+      },
+      "Monday": {
+        "open": "Closed",
+        "close": "Closed"
+      },
+      "Tuesday": {
+        "open": "7:00",
+        "close": "15:00"
+      },
+      "Wednesday": {
+        "open": "7:00",
+        "close": "15:00"
+      },
+      "Thursday": {
+        "open": "7:00",
+        "close": "15:00"
+      },
+      "Friday": {
+        "open": "7:00",
+        "close": "15:00"
+      },
+      "Saturday": {
+        "open": "8:00",
+        "close": "15:00"
+      }
+    },
+    "website": null
+  },
+  {
+    "id": 37,
+    "name": "Rosie O\u2019Grady\u2019s (Ferndale)",
+    "category": "Bar/Restaurant",
+    "image": "/media/dogs/fallback.jpg",
+    "address": "279 W 9 Mile Rd, Ferndale, MI 48220",
+    "tags": [],
+    "lat": 42.4604,
+    "lng": -83.1346,
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Rosie+O%E2%80%99Grady%E2%80%99s+%28Ferndale%29+279+W+9+Mile+Rd%2C+Ferndale%2C+MI+48220",
+    "yelpUrl": "https://www.yelp.com/search?find_desc=Rosie+O%E2%80%99Grady%E2%80%99s+%28Ferndale%29&find_loc=Ferndale%2C+MI",
+    "hours": {
+      "Sunday": {
+        "open": "10:00",
+        "close": "22:00"
+      },
+      "Monday": {
+        "open": "11:00",
+        "close": "22:00"
+      },
+      "Tuesday": {
+        "open": "11:00",
+        "close": "22:00"
+      },
+      "Wednesday": {
+        "open": "11:00",
+        "close": "22:00"
+      },
+      "Thursday": {
+        "open": "11:00",
+        "close": "22:00"
+      },
+      "Friday": {
+        "open": "11:00",
+        "close": "23:59"
+      },
+      "Saturday": {
+        "open": "11:00",
+        "close": "23:59"
+      }
+    },
+    "website": null
+  },
+  {
+    "id": 38,
+    "name": "Ferndale Project",
+    "category": "Brewery/Restaurant",
+    "image": "/media/dogs/fallback.jpg",
+    "address": "567 Livernois St, Ferndale, MI 48220",
+    "tags": [],
+    "lat": 42.4608,
+    "lng": -83.1285,
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Ferndale+Project+567+Livernois+St%2C+Ferndale%2C+MI+48220",
+    "yelpUrl": "https://www.yelp.com/search?find_desc=Ferndale+Project&find_loc=Ferndale%2C+MI",
+    "hours": {
+      "Sunday": {
+        "open": "8:00",
+        "close": "14:00"
+      },
+      "Monday": {
+        "open": "Closed",
+        "close": "Closed"
+      },
+      "Tuesday": {
+        "open": "7:00",
+        "close": "14:00"
+      },
+      "Wednesday": {
+        "open": "7:00",
+        "close": "14:00"
+      },
+      "Thursday": {
+        "open": "7:00",
+        "close": "14:00"
+      },
+      "Friday": {
+        "open": "7:00",
+        "close": "14:00"
+      },
+      "Saturday": {
+        "open": "8:00",
+        "close": "14:00"
+      }
+    },
+    "website": null
+  },
+  {
+    "id": 39,
+    "name": "Supergeil",
+    "category": "Restaurant",
+    "image": "/media/dogs/fallback.jpg",
+    "address": "3900 Second Ave, Detroit, MI 48201",
+    "tags": [],
+    "lat": 42.3506,
+    "lng": -83.0669,
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Supergeil+3900+Second+Ave%2C+Detroit%2C+MI+48201",
+    "yelpUrl": "https://www.yelp.com/search?find_desc=Supergeil&find_loc=Detroit%2C+MI",
+    "hours": {
+      "Sunday": {
+        "open": "9:00",
+        "close": "20:00"
+      },
+      "Monday": {
+        "open": "11:00",
+        "close": "20:00"
+      },
+      "Tuesday": {
+        "open": "11:00",
+        "close": "20:00"
+      },
+      "Wednesday": {
+        "open": "11:00",
+        "close": "20:00"
+      },
+      "Thursday": {
+        "open": "11:00",
+        "close": "20:00"
+      },
+      "Friday": {
+        "open": "11:00",
+        "close": "22:00"
+      },
+      "Saturday": {
+        "open": "11:00",
+        "close": "22:00"
+      }
+    },
+    "website": null
+  },
+  {
+    "id": 40,
+    "name": "La Dolce Vita",
+    "category": "Restaurant",
+    "image": "/media/dogs/fallback.jpg",
+    "address": "17546 Woodward Ave, Detroit, MI 48203",
+    "tags": [],
+    "lat": 42.4242,
+    "lng": -83.0971,
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=La+Dolce+Vita+17546+Woodward+Ave%2C+Detroit%2C+MI+48203",
+    "yelpUrl": "https://www.yelp.com/search?find_desc=La+Dolce+Vita&find_loc=Detroit%2C+MI",
+    "hours": {
+      "Sunday": {
+        "open": "10:00",
+        "close": "17:00"
+      },
+      "Monday": {
+        "open": "8:00",
+        "close": "18:00"
+      },
+      "Tuesday": {
+        "open": "8:00",
+        "close": "18:00"
+      },
+      "Wednesday": {
+        "open": "8:00",
+        "close": "18:00"
+      },
+      "Thursday": {
+        "open": "8:00",
+        "close": "18:00"
+      },
+      "Friday": {
+        "open": "8:00",
+        "close": "18:00"
+      },
+      "Saturday": {
+        "open": "9:00",
+        "close": "17:00"
+      }
+    },
+    "website": null
+  },
+  {
+    "id": 41,
+    "name": "Bert\u2019s Warehouse (Eastern Market)",
+    "category": "Restaurant/Entertainment",
+    "image": "/media/dogs/fallback.jpg",
+    "address": "2739 Russell St, Detroit, MI 48207",
+    "tags": [],
+    "lat": 42.3487,
+    "lng": -83.0416,
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Bert%E2%80%99s+Warehouse+%28Eastern+Market%29+2739+Russell+St%2C+Detroit%2C+MI+48207",
+    "yelpUrl": "https://www.yelp.com/search?find_desc=Bert%E2%80%99s+Warehouse+%28Eastern+Market%29&find_loc=Detroit%2C+MI",
+    "hours": {
+      "Sunday": {
+        "open": "9:00",
+        "close": "14:00"
+      },
+      "Monday": {
+        "open": "Closed",
+        "close": "Closed"
+      },
+      "Tuesday": {
+        "open": "7:00",
+        "close": "14:00"
+      },
+      "Wednesday": {
+        "open": "7:00",
+        "close": "14:00"
+      },
+      "Thursday": {
+        "open": "7:00",
+        "close": "14:00"
+      },
+      "Friday": {
+        "open": "7:00",
+        "close": "14:00"
+      },
+      "Saturday": {
+        "open": "8:00",
+        "close": "14:00"
+      }
+    },
+    "website": null
+  },
+  {
+    "id": 42,
+    "name": "Pie-Sci",
+    "category": "Restaurant/Pizza",
+    "image": "/media/dogs/fallback.jpg",
+    "address": "5163 Trumbull Ave, Detroit, MI 48208",
+    "tags": [],
+    "lat": 42.3539,
+    "lng": -83.0708,
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Pie-Sci+5163+Trumbull+Ave%2C+Detroit%2C+MI+48208",
+    "yelpUrl": "https://www.yelp.com/search?find_desc=Pie-Sci&find_loc=Detroit%2C+MI",
+    "hours": {
+      "Sunday": {
+        "open": "10:00",
+        "close": "18:00"
+      },
+      "Monday": {
+        "open": "7:00",
+        "close": "18:00"
+      },
+      "Tuesday": {
+        "open": "7:00",
+        "close": "18:00"
+      },
+      "Wednesday": {
+        "open": "7:00",
+        "close": "18:00"
+      },
+      "Thursday": {
+        "open": "7:00",
+        "close": "18:00"
+      },
+      "Friday": {
+        "open": "7:00",
+        "close": "18:00"
+      },
+      "Saturday": {
+        "open": "8:00",
+        "close": "18:00"
+      }
+    },
+    "website": null
+  },
+  {
+    "id": 43,
+    "name": "Parc (Campus Martius)",
+    "category": "Restaurant",
+    "image": "/media/dogs/fallback.jpg",
+    "address": "800 Woodward Ave, Detroit, MI 48226",
+    "tags": [],
+    "lat": 42.3314,
+    "lng": -83.047,
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Parc+%28Campus+Martius%29+800+Woodward+Ave%2C+Detroit%2C+MI+48226",
+    "yelpUrl": "https://www.yelp.com/search?find_desc=Parc+%28Campus+Martius%29&find_loc=Detroit%2C+MI",
+    "hours": {
+      "Sunday": {
+        "open": "8:00",
+        "close": "16:00"
+      },
+      "Monday": {
+        "open": "Closed",
+        "close": "Closed"
+      },
+      "Tuesday": {
+        "open": "7:00",
+        "close": "16:00"
+      },
+      "Wednesday": {
+        "open": "7:00",
+        "close": "16:00"
+      },
+      "Thursday": {
+        "open": "7:00",
+        "close": "16:00"
+      },
+      "Friday": {
+        "open": "7:00",
+        "close": "16:00"
+      },
+      "Saturday": {
+        "open": "8:00",
+        "close": "16:00"
+      }
+    },
+    "website": null
+  },
+  {
+    "id": 44,
+    "name": "Summertown Fresh (Corktown)",
+    "category": "Cafe/Restaurant",
+    "image": "/media/dogs/fallback.jpg",
+    "address": "2138 Michigan Ave, Detroit, MI 48216",
+    "tags": [],
+    "lat": 42.3316,
+    "lng": -83.0743,
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Summertown+Fresh+%28Corktown%29+2138+Michigan+Ave%2C+Detroit%2C+MI+48216",
+    "yelpUrl": "https://www.yelp.com/search?find_desc=Summertown+Fresh+%28Corktown%29&find_loc=Detroit%2C+MI",
+    "hours": {
+      "Sunday": {
+        "open": "9:00",
+        "close": "21:00"
+      },
+      "Monday": {
+        "open": "11:00",
+        "close": "21:00"
+      },
+      "Tuesday": {
+        "open": "11:00",
+        "close": "21:00"
+      },
+      "Wednesday": {
+        "open": "11:00",
+        "close": "21:00"
+      },
+      "Thursday": {
+        "open": "11:00",
+        "close": "21:00"
+      },
+      "Friday": {
+        "open": "11:00",
+        "close": "23:59"
+      },
+      "Saturday": {
+        "open": "11:00",
+        "close": "23:59"
+      }
+    },
+    "website": null
+  },
+  {
+    "id": 45,
+    "name": "Andrew\u2019s on the Corner",
+    "category": "Bar/Restaurant",
+    "image": "/media/dogs/fallback.jpg",
+    "address": "201 Joseph Campau Ave, Detroit, MI 48207",
+    "tags": [],
+    "lat": 42.3461,
+    "lng": -83.0129,
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Andrew%E2%80%99s+on+the+Corner+201+Joseph+Campau+Ave%2C+Detroit%2C+MI+48207",
+    "yelpUrl": "https://www.yelp.com/search?find_desc=Andrew%E2%80%99s+on+the+Corner&find_loc=Detroit%2C+MI",
+    "hours": {
+      "Sunday": {
+        "open": "10:00",
+        "close": "14:00"
+      },
+      "Monday": {
+        "open": "Closed",
+        "close": "Closed"
+      },
+      "Tuesday": {
+        "open": "8:00",
+        "close": "14:00"
+      },
+      "Wednesday": {
+        "open": "8:00",
+        "close": "14:00"
+      },
+      "Thursday": {
+        "open": "8:00",
+        "close": "14:00"
+      },
+      "Friday": {
+        "open": "8:00",
+        "close": "14:00"
+      },
+      "Saturday": {
+        "open": "9:00",
+        "close": "14:00"
+      }
+    },
+    "website": null
+  },
+  {
+    "id": 46,
+    "name": "Woodward Avenue Brewers (WAB)",
+    "category": "Brewpub",
+    "image": "/media/dogs/fallback.jpg",
+    "address": "22646 Woodward Ave, Ferndale, MI 48220",
+    "tags": [],
+    "lat": 42.4603,
+    "lng": -83.1336,
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Woodward+Avenue+Brewers+%28WAB%29+22646+Woodward+Ave%2C+Ferndale%2C+MI+48220",
+    "yelpUrl": "https://www.yelp.com/search?find_desc=Woodward+Avenue+Brewers+%28WAB%29&find_loc=Ferndale%2C+MI",
+    "hours": {
+      "Sunday": {
+        "open": "9:00",
+        "close": "15:00"
+      },
+      "Monday": {
+        "open": "Closed",
+        "close": "Closed"
+      },
+      "Tuesday": {
+        "open": "7:00",
+        "close": "15:00"
+      },
+      "Wednesday": {
+        "open": "7:00",
+        "close": "15:00"
+      },
+      "Thursday": {
+        "open": "7:00",
+        "close": "15:00"
+      },
+      "Friday": {
+        "open": "7:00",
+        "close": "15:00"
+      },
+      "Saturday": {
+        "open": "8:00",
+        "close": "15:00"
+      }
+    },
+    "website": null
+  },
+  {
+    "id": 47,
+    "name": "Witch\u2019s Hat Brewing Co.",
+    "category": "Brewery",
+    "image": "/media/dogs/fallback.jpg",
+    "address": "601 S Lafayette St, South Lyon, MI 48178",
+    "tags": [],
+    "lat": 42.4605,
+    "lng": -83.6531,
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Witch%E2%80%99s+Hat+Brewing+Co.+601+S+Lafayette+St%2C+South+Lyon%2C+MI+48178",
+    "yelpUrl": "https://www.yelp.com/search?find_desc=Witch%E2%80%99s+Hat+Brewing+Co.&find_loc=South+Lyon%2C+MI",
+    "hours": {
+      "Sunday": {
+        "open": "10:00",
+        "close": "22:00"
+      },
+      "Monday": {
+        "open": "11:00",
+        "close": "22:00"
+      },
+      "Tuesday": {
+        "open": "11:00",
+        "close": "22:00"
+      },
+      "Wednesday": {
+        "open": "11:00",
+        "close": "22:00"
+      },
+      "Thursday": {
+        "open": "11:00",
+        "close": "22:00"
+      },
+      "Friday": {
+        "open": "11:00",
+        "close": "23:59"
+      },
+      "Saturday": {
+        "open": "11:00",
+        "close": "23:59"
+      }
+    },
+    "website": null
+  },
+  {
+    "id": 48,
+    "name": "Joebar (Hazel Park)",
+    "category": "Bar/Restaurant",
+    "image": "/media/dogs/fallback.jpg",
+    "address": "23839 John R Rd, Hazel Park, MI 48030",
+    "tags": [],
+    "lat": 42.4628,
+    "lng": -83.1032,
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Joebar+%28Hazel+Park%29+23839+John+R+Rd%2C+Hazel+Park%2C+MI+48030",
+    "yelpUrl": "https://www.yelp.com/search?find_desc=Joebar+%28Hazel+Park%29&find_loc=Hazel+Park%2C+MI",
+    "hours": {
+      "Sunday": {
+        "open": "8:00",
+        "close": "14:00"
+      },
+      "Monday": {
+        "open": "Closed",
+        "close": "Closed"
+      },
+      "Tuesday": {
+        "open": "7:00",
+        "close": "14:00"
+      },
+      "Wednesday": {
+        "open": "7:00",
+        "close": "14:00"
+      },
+      "Thursday": {
+        "open": "7:00",
+        "close": "14:00"
+      },
+      "Friday": {
+        "open": "7:00",
+        "close": "14:00"
+      },
+      "Saturday": {
+        "open": "8:00",
+        "close": "14:00"
+      }
+    },
+    "website": null
+  },
+  {
+    "id": 49,
+    "name": "MotorCity Wine",
+    "category": "Wine Bar",
+    "image": "/media/dogs/fallback.jpg",
     "address": "1949 Michigan Ave, Detroit, MI 48216",
+    "tags": [],
     "lat": 42.3305,
-    "lng": -83.0697,
-    "dog_friendly": true,
-    "always_open": false,
-    "phone": "(313) 483-7283",
-    "image_url": "https://images.unsplash.com/photo-winebar",
-    "open_hours": {
-      "Monday": [],
-      "Tuesday": [
-        "16:00",
-        "22:00"
-      ],
-      "Wednesday": [
-        "16:00",
-        "22:00"
-      ],
-      "Thursday": [
-        "16:00",
-        "22:00"
-      ],
-      "Friday": [
-        "16:00",
-        "23:59"
-      ],
-      "Saturday": [
-        "14:00",
-        "23:59"
-      ],
-      "Sunday": [
-        "14:00",
-        "22:00"
-      ]
-    }
+    "lng": -83.0707,
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=MotorCity+Wine+1949+Michigan+Ave%2C+Detroit%2C+MI+48216",
+    "yelpUrl": "https://www.yelp.com/search?find_desc=MotorCity+Wine&find_loc=Detroit%2C+MI",
+    "hours": {
+      "Sunday": {
+        "open": "9:00",
+        "close": "20:00"
+      },
+      "Monday": {
+        "open": "11:00",
+        "close": "20:00"
+      },
+      "Tuesday": {
+        "open": "11:00",
+        "close": "20:00"
+      },
+      "Wednesday": {
+        "open": "11:00",
+        "close": "20:00"
+      },
+      "Thursday": {
+        "open": "11:00",
+        "close": "20:00"
+      },
+      "Friday": {
+        "open": "11:00",
+        "close": "22:00"
+      },
+      "Saturday": {
+        "open": "11:00",
+        "close": "22:00"
+      }
+    },
+    "website": null
+  },
+  {
+    "id": 50,
+    "name": "Como\u2019s (Ferndale) [already counted in Batch 1 skip \u2013 use alternate: MotorCity Brewing \u2013 Royal Oak]",
+    "category": "Brewery",
+    "image": "/media/dogs/fallback.jpg",
+    "address": "406 E 4th St, Royal Oak, MI 48067",
+    "tags": [],
+    "lat": 42.4906,
+    "lng": -83.1389,
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Como%E2%80%99s+%28Ferndale%29+%5Balready+counted+in+Batch+1+skip+%E2%80%93+use+alternate%3A+MotorCity+Brewing+%E2%80%93+Royal+Oak%5D+406+E+4th+St%2C+Royal+Oak%2C+MI+48067",
+    "yelpUrl": "https://www.yelp.com/search?find_desc=Como%E2%80%99s+%28Ferndale%29+%5Balready+counted+in+Batch+1+skip+%E2%80%93+use+alternate%3A+MotorCity+Brewing+%E2%80%93+Royal+Oak%5D&find_loc=Royal+Oak%2C+MI",
+    "hours": {
+      "Sunday": {
+        "open": "10:00",
+        "close": "17:00"
+      },
+      "Monday": {
+        "open": "8:00",
+        "close": "18:00"
+      },
+      "Tuesday": {
+        "open": "8:00",
+        "close": "18:00"
+      },
+      "Wednesday": {
+        "open": "8:00",
+        "close": "18:00"
+      },
+      "Thursday": {
+        "open": "8:00",
+        "close": "18:00"
+      },
+      "Friday": {
+        "open": "8:00",
+        "close": "18:00"
+      },
+      "Saturday": {
+        "open": "9:00",
+        "close": "17:00"
+      }
+    },
+    "website": null
   }
 ]

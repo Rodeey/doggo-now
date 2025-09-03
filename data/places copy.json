@@ -1,0 +1,68 @@
+[
+  {
+    "name": "Midnight Paws Caf\u00e9",
+    "slug": "midnight_paws",
+    "category": "Cafe",
+    "address": "123 Main St, Detroit, MI 48201",
+    "opens_at": "08:00",
+    "closes_at": "20:00",
+    "google_url": "https://www.google.com/maps/place/Midnight+Paws+Cafe/",
+    "yelp_url": "https://www.yelp.com/biz/midnight-paws-cafe-detroit",
+    "image_url": "/media/dogs/dog_coffee.jpg"
+  },
+  {
+    "name": "24/7 Barkside Bar",
+    "slug": "barkside_bar",
+    "category": "Bar",
+    "address": "456 Elm St, Detroit, MI 48201",
+    "opens_at": "11:00",
+    "closes_at": "02:00",
+    "google_url": "https://www.google.com/maps/place/Barkside+Bar/",
+    "yelp_url": "https://www.yelp.com/biz/24-7-barkside-bar-detroit",
+    "image_url": "/media/dogs/dog_bday.jpg"
+  },
+  {
+    "name": "Detroit Shipping Company",
+    "slug": "detroit_shipping",
+    "category": "Restaurant",
+    "address": "474 Peterboro St, Detroit, MI 48201",
+    "opens_at": "11:00",
+    "closes_at": "00:00",
+    "google_url": "https://www.google.com/maps/place/Detroit+Shipping+Company/",
+    "yelp_url": "https://www.yelp.com/biz/detroit-shipping-company-detroit",
+    "image_url": "/media/dogs/dog_hammock.jpg"
+  },
+  {
+    "name": "Eastern Market Brewing Co.",
+    "slug": "eastern_market",
+    "category": "Bar",
+    "address": "2515 Riopelle St, Detroit, MI 48207",
+    "opens_at": "11:00",
+    "closes_at": "23:00",
+    "google_url": "https://www.google.com/maps/place/Eastern+Market+Brewing+Company/",
+    "yelp_url": "https://www.yelp.com/biz/eastern-market-brewing-co-detroit",
+    "image_url": "/media/dogs/dog_tongue.jpg"
+  },
+  {
+    "name": "Batch Brewing Company",
+    "slug": "batch_brewing",
+    "category": "Bar",
+    "address": "1400 Porter St, Detroit, MI 48216",
+    "opens_at": "11:00",
+    "closes_at": "22:00",
+    "google_url": "https://www.google.com/maps/place/Batch+Brewing+Company/",
+    "yelp_url": "https://www.yelp.com/biz/batch-brewing-company-detroit",
+    "image_url": "/media/dogs/dog_shades.jpg"
+  },
+  {
+    "name": "Motor City Wine",
+    "slug": "motor_city_wine",
+    "category": "Bar",
+    "address": "1949 Michigan Ave, Detroit, MI 48216",
+    "opens_at": "16:00",
+    "closes_at": "00:00",
+    "google_url": "https://www.google.com/maps/place/Motor+City+Wine/",
+    "yelp_url": "https://www.yelp.com/biz/motor-city-wine-detroit",
+    "image_url": "/media/dogs/happy_dogs.jpg"
+  }
+]
