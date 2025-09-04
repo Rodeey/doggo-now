@@ -1,18 +1,18 @@
-import React from "react";
+import React, { useMemo } from "react";
 import dynamic from "next/dynamic";
-import { useMemo } from "react";
 import type { Place } from "@/lib/types";
 
-// Dynamic imports (no SSR) — unchanged
+// Dynamic imports (no SSR) – same behavior as before
 const MapContainer = dynamic(() => import("react-leaflet").then(m => m.MapContainer), { ssr: false });
 const TileLayer = dynamic(() => import("react-leaflet").then(m => m.TileLayer), { ssr: false });
 const CircleMarker = dynamic(() => import("react-leaflet").then(m => m.CircleMarker), { ssr: false });
 const Popup = dynamic(() => import("react-leaflet").then(m => m.Popup), { ssr: false });
 
-// TYPE-ONLY WORKAROUND:
-// Some CI setups mis-detect MapContainer's props. Cast to a broad component type to satisfy TS at build time.
-// This does NOT change runtime behavior.
+// TYPE-ONLY WORKAROUNDS (CI typing mismatch for react-leaflet props):
 const AnyMapContainer = MapContainer as unknown as React.ComponentType<any>;
+const AnyTileLayer = TileLayer as unknown as React.ComponentType<any>;
+const AnyCircleMarker = CircleMarker as unknown as React.ComponentType<any>;
+const AnyPopup = Popup as unknown as React.ComponentType<any>;
 
 type Props = {
   places: Place[];
@@ -24,30 +24,26 @@ export default function MapView({ places, userLoc }: Props) {
     ? [userLoc.lat, userLoc.lng]
     : [42.3314, -83.0458]) as [number, number];
 
-  const markers = useMemo(() => {
-    return places.filter(p => p.lat && p.lng);
-  }, [places]);
+  const markers = useMemo(() => places.filter(p => p.lat && p.lng), [places]);
 
   return (
     <div className="h-[70vh] w-full overflow-hidden rounded-2xl border border-neutral-800">
       <AnyMapContainer center={center} zoom={12} style={{ height: "100%", width: "100%" }}>
-        <TileLayer
+        <AnyTileLayer
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
           attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
         />
         {markers.map(p => (
-          <CircleMarker
+          <AnyCircleMarker
             key={p.id}
             center={[p.lat as number, p.lng as number]}
             radius={8}
             pathOptions={{ color: "#3b82f6", fillOpacity: 0.7 }}
           >
-            <Popup>
+            <AnyPopup>
               <div className="min-w-[180px]">
                 <div className="font-semibold">{p.name}</div>
-                {p.address && (
-                  <div className="mt-1 text-xs text-neutral-500">{p.address}</div>
-                )}
+                {p.address && <div className="mt-1 text-xs text-neutral-500">{p.address}</div>}
                 <div className="mt-2 flex flex-wrap gap-2">
                   <a
                     className="pill border-blue-600 bg-blue-500/10 text-blue-300"
@@ -64,11 +60,9 @@ export default function MapView({ places, userLoc }: Props) {
                     className="pill border-pink-600 bg-pink-500/10 text-pink-300"
                     href={
                       p.links.yelp ||
-                      `https://www.yelp.com/search?find_desc=${encodeURIComponent(
-                        p.name
-                      )}&find_loc=${encodeURIComponent(p.city || "Detroit")}%2C%20${encodeURIComponent(
-                        p.state || "MI"
-                      )}`
+                      `https://www.yelp.com/search?find_desc=${encodeURIComponent(p.name)}&find_loc=${encodeURIComponent(
+                        p.city || "Detroit"
+                      )}%2C%20${encodeURIComponent(p.state || "MI")}`
                     }
                     target="_blank"
                     rel="noreferrer"
@@ -80,11 +74,7 @@ export default function MapView({ places, userLoc }: Props) {
                     href={
                       p.links.tiktokSearch ||
                       `https://www.tiktok.com/search?q=${encodeURIComponent(
-                        p.name +
-                          " " +
-                          (p.city || "Detroit") +
-                          " " +
-                          (p.state || "MI")
+                        `${p.name} ${p.city || "Detroit"} ${p.state || "MI"}`
                       )}`
                     }
                     target="_blank"
@@ -104,8 +94,8 @@ export default function MapView({ places, userLoc }: Props) {
                   )}
                 </div>
               </div>
-            </Popup>
-          </CircleMarker>
+            </AnyPopup>
+          </AnyCircleMarker>
         ))}
       </AnyMapContainer>
     </div>
