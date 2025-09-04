@@ -1,0 +1,178 @@
+[
+  {
+    "id": "detroit-shipping-company",
+    "name": "Detroit Shipping Company",
+    "address": "474 Peterboro St, Detroit, MI 48201",
+    "city": "Detroit",
+    "state": "MI",
+    "lat": 42.3497,
+    "lng": -83.0615,
+    "category": "Restaurant",
+    "imageUrl": "/media/placeholder.jpg",
+    "opens_at": "11:00",
+    "closes_at": "00:00",
+    "links": {
+      "google": "https://maps.google.com/?q=Detroit+Shipping+Company",
+      "yelp": null,
+      "website": "https://detroitshippingcompany.com"
+    },
+    "subcategories": [
+      "Food Hall"
+    ],
+    "dogFriendly": "yes"
+  },
+  {
+    "id": "corktown-brewery",
+    "name": "Corktown Brewery",
+    "address": "1400 Michigan Ave, Detroit, MI 48216",
+    "city": "Detroit",
+    "state": "MI",
+    "lat": 42.3312,
+    "lng": -83.0707,
+    "category": "Brewery",
+    "imageUrl": "/media/placeholder.jpg",
+    "opens_at": "12:00",
+    "closes_at": "01:00",
+    "links": {
+      "google": null,
+      "yelp": null,
+      "website": null
+    },
+    "subcategories": [
+      "Beer Garden"
+    ],
+    "dogFriendly": "yes"
+  },
+  {
+    "id": "great-lakes-coffee",
+    "name": "The Great Lakes Coffee Roasting Company",
+    "address": "3965 Woodward Ave, Detroit, MI 48201",
+    "city": "Detroit",
+    "state": "MI",
+    "lat": 42.3477,
+    "lng": -83.0622,
+    "category": "Cafe",
+    "imageUrl": "/media/placeholder.jpg",
+    "opens_at": "07:00",
+    "closes_at": "18:00",
+    "links": {
+      "google": null,
+      "yelp": null,
+      "website": "https://greatlakescoffee.com"
+    },
+    "subcategories": [
+      "Coffee"
+    ],
+    "dogFriendly": "unknown"
+  },
+  {
+    "id": "campus-martius-park",
+    "name": "Campus Martius Park",
+    "address": "800 Woodward Ave, Detroit, MI 48226",
+    "city": "Detroit",
+    "state": "MI",
+    "lat": 42.3317,
+    "lng": -83.0466,
+    "category": "Park",
+    "imageUrl": "/media/placeholder.jpg",
+    "opens_at": "06:00",
+    "closes_at": "22:00",
+    "links": {
+      "google": null,
+      "yelp": null,
+      "website": "https://downtowndetroit.org/parks/campus-martius-park/"
+    },
+    "subcategories": [
+      "Outdoor"
+    ],
+    "dogFriendly": "yes"
+  },
+  {
+    "id": "astro-coffee",
+    "name": "Astro Coffee",
+    "address": "2124 Michigan Ave, Detroit, MI 48216",
+    "city": "Detroit",
+    "state": "MI",
+    "lat": 42.3319,
+    "lng": -83.0727,
+    "category": "Cafe",
+    "imageUrl": "/media/placeholder.jpg",
+    "opens_at": "08:00",
+    "closes_at": "16:00",
+    "links": {
+      "google": null,
+      "yelp": null,
+      "website": null
+    },
+    "subcategories": [
+      "Coffee"
+    ],
+    "dogFriendly": "unknown"
+  },
+  {
+    "id": "mudgie-deli",
+    "name": "Mudgie's Deli & Wine Shop",
+    "address": "1413 Brooklyn St, Detroit, MI 48226",
+    "city": "Detroit",
+    "state": "MI",
+    "lat": 42.3298,
+    "lng": -83.0691,
+    "category": "Restaurant",
+    "imageUrl": "/media/placeholder.jpg",
+    "opens_at": "11:00",
+    "closes_at": "21:00",
+    "links": {
+      "google": null,
+      "yelp": null,
+      "website": "https://www.mudgiesdeli.com"
+    },
+    "subcategories": [
+      "Deli"
+    ],
+    "dogFriendly": "yes"
+  },
+  {
+    "id": "city-bakery",
+    "name": "City Bakery",
+    "address": "123 Bakery Ln, Detroit, MI 48207",
+    "city": "Detroit",
+    "state": "MI",
+    "lat": 42.345,
+    "lng": -83.03,
+    "category": "Bakery",
+    "imageUrl": "/media/placeholder.jpg",
+    "opens_at": "06:00",
+    "closes_at": "14:00",
+    "links": {
+      "google": null,
+      "yelp": null,
+      "website": null
+    },
+    "subcategories": [
+      "Pastries"
+    ],
+    "dogFriendly": "unknown"
+  },
+  {
+    "id": "after-hours-bar",
+    "name": "After Hours Bar",
+    "address": "9 Night Owl St, Detroit, MI 48210",
+    "city": "Detroit",
+    "state": "MI",
+    "lat": 42.335,
+    "lng": -83.08,
+    "category": "Bar",
+    "imageUrl": "/media/placeholder.jpg",
+    "opens_at": "20:00",
+    "closes_at": "02:00",
+    "links": {
+      "google": null,
+      "yelp": null,
+      "website": null
+    },
+    "subcategories": [
+      "Late Night"
+    ],
+    "dogFriendly": "unknown"
+  }
+]
