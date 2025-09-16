@@ -4,7 +4,9 @@ import Header from "@/components/Header";
 import LocationPromptModal from "@/components/LocationPromptModal";
 import CategoryChips from "@/components/CategoryChips";
 import PlaceCardRow from "@/components/PlaceCardRow";
-import MapView from "@/components/MapView";
+import dynamic from "next/dynamic";
+const MapView = dynamic(() => import("@/components/MapView"), { ssr: false });
+
 import isOpenNow from "@/lib/isOpenNow";
 import type { Place, CoreCat } from "@/lib/types";
 import localPlaces from "@/data/places.json";
