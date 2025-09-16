@@ -29,15 +29,23 @@ type Place = {
   website?: string;
 };
 
-export default function MapView({ places }: { places: Place[] }) {
-  const center = places.length
-    ? [places[0].lat, places[0].lng]
-    : [42.3314, -83.0458]; // Default to Detroit
+type Props = {
+  places: Place[];
+  userLoc?: { lat: number; lng: number } | null;
+};
+
+export default function MapView({ places, userLoc }: Props) {
+  const center: [number, number] =
+    userLoc?.lat && userLoc?.lng
+      ? [userLoc.lat, userLoc.lng]
+      : places.length
+      ? [places[0].lat, places[0].lng]
+      : [42.3314, -83.0458]; // Detroit fallback
 
   return (
     <div className="h-[70vh] w-full overflow-hidden rounded-2xl border border-neutral-800">
       <LeafletMap
-        center={center as [number, number]}
+        center={center}
         zoom={12}
         scrollWheelZoom={false}
         style={{ height: "100%", width: "100%" }}
