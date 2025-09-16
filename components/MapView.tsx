@@ -2,13 +2,13 @@ import React, { useMemo } from "react";
 import dynamic from "next/dynamic";
 import type { Place } from "@/lib/types";
 
-// Dynamic imports (no SSR) – same behavior as before
+// Dynamically import Leaflet components (no SSR)
 const MapContainer = dynamic(() => import("react-leaflet").then(m => m.MapContainer), { ssr: false });
 const TileLayer = dynamic(() => import("react-leaflet").then(m => m.TileLayer), { ssr: false });
 const CircleMarker = dynamic(() => import("react-leaflet").then(m => m.CircleMarker), { ssr: false });
 const Popup = dynamic(() => import("react-leaflet").then(m => m.Popup), { ssr: false });
 
-// TYPE-ONLY WORKAROUNDS (CI typing mismatch for react-leaflet props):
+// Bypass types that may cause build issues
 const AnyMapContainer = MapContainer as unknown as React.ComponentType<any>;
 const AnyTileLayer = TileLayer as unknown as React.ComponentType<any>;
 const AnyCircleMarker = CircleMarker as unknown as React.ComponentType<any>;
@@ -28,7 +28,12 @@ export default function MapView({ places, userLoc }: Props) {
 
   return (
     <div className="h-[70vh] w-full overflow-hidden rounded-2xl border border-neutral-800">
-      <AnyMapContainer center={center} zoom={12} style={{ height: "100%", width: "100%" }}>
+      <AnyMapContainer
+        center={center}
+        zoom={12}
+        scrollWheelZoom={false}
+        style={{ height: "100%", width: "100%" }}
+      >
         <AnyTileLayer
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
           attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
