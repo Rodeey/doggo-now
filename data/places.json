@@ -174,5 +174,93 @@
       "Late Night"
     ],
     "dogFriendly": "unknown"
+  },
+  {
+    "id": "motor-city-brewing-works",
+    "name": "Motor City Brewing Works",
+    "address": "470 W Canfield St, Detroit, MI 48201",
+    "city": "Detroit",
+    "state": "MI",
+    "lat": 42.354,
+    "lng": -83.0654,
+    "category": "Brewery",
+    "imageUrl": "/media/placeholder.jpg",
+    "opens_at": "00:00",
+    "closes_at": "23:59",
+    "links": {
+      "google": "https://maps.google.com/?q=Motor+City+Brewing+Works",
+      "yelp": null,
+      "website": "https://motorcitybeer.com"
+    },
+    "subcategories": [
+      "Brewery"
+    ],
+    "dogFriendly": "yes"
+  },
+  {
+    "id": "batch-brewing-company",
+    "name": "Batch Brewing Company",
+    "address": "1400 Porter St, Detroit, MI 48216",
+    "city": "Detroit",
+    "state": "MI",
+    "lat": 42.3268,
+    "lng": -83.0705,
+    "category": "Brewery",
+    "imageUrl": "/media/placeholder.jpg",
+    "opens_at": "12:00",
+    "closes_at": "00:00",
+    "links": {
+      "google": "https://maps.google.com/?q=Batch+Brewing+Company",
+      "yelp": null,
+      "website": "https://batchbrewingcompany.com"
+    },
+    "subcategories": [
+      "Brewpub"
+    ],
+    "dogFriendly": "yes"
+  },
+  {
+    "id": "eastern-market-brewing-co",
+    "name": "Eastern Market Brewing Co",
+    "address": "2515 Riopelle St, Detroit, MI 48207",
+    "city": "Detroit",
+    "state": "MI",
+    "lat": 42.3495,
+    "lng": -83.0405,
+    "category": "Brewery",
+    "imageUrl": "/media/placeholder.jpg",
+    "opens_at": "12:00",
+    "closes_at": "00:00",
+    "links": {
+      "google": "https://maps.google.com/?q=Eastern+Market+Brewing+Co",
+      "yelp": null,
+      "website": "https://easternmarket.beer"
+    },
+    "subcategories": [
+      "Brewery"
+    ],
+    "dogFriendly": "yes"
+  },
+  {
+    "id": "axle-brewing-company",
+    "name": "Axle Brewing Company",
+    "address": "567 Livernois St, Ferndale, MI 48220",
+    "city": "Ferndale",
+    "state": "MI",
+    "lat": 42.4599,
+    "lng": -83.1375,
+    "category": "Brewery",
+    "imageUrl": "/media/placeholder.jpg",
+    "opens_at": "12:00",
+    "closes_at": "00:00",
+    "links": {
+      "google": "https://maps.google.com/?q=Axle+Brewing+Company",
+      "yelp": null,
+      "website": "https://axlebrewing.com"
+    },
+    "subcategories": [
+      "Taproom"
+    ],
+    "dogFriendly": "yes"
   }
 ]

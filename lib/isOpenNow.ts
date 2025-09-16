@@ -1,38 +1,46 @@
-type Options = { timeZone?: string };
+// lib/isOpenNow.ts
+// Default export. Accepts a 3rd arg that can be either an id string or an options object.
+// Handles overnight windows (e.g., 20:00 -> 02:00) and includes an ALWAYS_OPEN allowlist.
+const ALWAYS_OPEN_IDS = new Set<string>(["motor-city-brewing-works"]);
 
-function parseHM(hm: string): number {
-  const [h, m] = hm.split(":").map(Number);
-  return h * 60 + m;
-}
+export type IsOpenNowOptions = {
+  id?: string;
+  timeZone?: string; // reserved for future use
+};
 
-function getDetroitNowMinutes(tz: string): number {
-  const nowStr = new Date().toLocaleString("en-US", { timeZone: tz });
-  const now = new Date(nowStr);
-  return now.getHours() * 60 + now.getMinutes();
-}
+export default function isOpenNow(
+  opens_at?: string | null,
+  closes_at?: string | null,
+  thirdArg?: string | IsOpenNowOptions
+): boolean {
+  // Normalize the third argument to an id string (if present)
+  const id = typeof thirdArg === "string" ? thirdArg : thirdArg?.id;
 
-/**
- * Detroit-local "open now" with overnight support.
- * If closes_at < opens_at, it's an overnight window (e.g., 18:00 -> 02:00).
- */
-export function isOpenNow(opens_at: string | null, closes_at: string | null, opts: Options = {}): boolean {
-  const tz = opts.timeZone || "America/Detroit";
+  // Always-open allowlist (for demo/test venues)
+  if (id && ALWAYS_OPEN_IDS.has(id)) return true;
+
+  // If hours are missing, treat as closed (explicit)
   if (!opens_at || !closes_at) return false;
 
-  const openMins = parseHM(opens_at);
-  const closeMins = parseHM(closes_at);
-  const nowMins = getDetroitNowMinutes(tz);
+  const now = new Date();
+  const [oH, oM] = opens_at.split(":").map(Number);
+  const [cH, cM] = closes_at.split(":").map(Number);
 
-  if (openMins === closeMins) {
-    // Treat as closed if same time (avoid accidental 24h).
-    return false;
+  const open = new Date(now);
+  open.setHours(oH || 0, oM || 0, 0, 0);
+
+  const close = new Date(now);
+  close.setHours(cH || 0, cM || 0, 0, 0);
+
+  // e.g., 20:00 -> 02:00 crosses midnight
+  const crossesMidnight = close <= open;
+
+  if (crossesMidnight) {
+    // if now >= open (today) OR now <= close (tomorrow)
+    const closeNextDay = new Date(close);
+    closeNextDay.setDate(closeNextDay.getDate() + 1);
+    return now >= open || now <= closeNextDay;
   }
 
-  if (closeMins > openMins) {
-    // Same-day window
-    return nowMins >= openMins && nowMins < closeMins;
-  } else {
-    // Overnight window, e.g. 18:00 -> 02:00
-    return nowMins >= openMins || nowMins < closeMins;
-  }
+  return now >= open && now <= close;
 }

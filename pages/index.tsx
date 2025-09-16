@@ -1,34 +1,39 @@
+// pages/index.tsx
 import { useEffect, useMemo, useState } from "react";
 import Header from "@/components/Header";
 import LocationPromptModal from "@/components/LocationPromptModal";
 import CategoryChips from "@/components/CategoryChips";
 import PlaceCardRow from "@/components/PlaceCardRow";
 import MapView from "@/components/MapView";
-import { isOpenNow } from "@/lib/isOpenNow";
+import isOpenNow from "@/lib/isOpenNow";
 import type { Place, CoreCat } from "@/lib/types";
 import localPlaces from "@/data/places.json";
-import { supabase } from "@/lib/supabase"; // NEW
+import { supabase } from "@/lib/supabase";
+
+const TEST_ID = "motor-city-brewing-works";
+const TEST_FROM_LOCAL = Array.isArray(localPlaces)
+  ? (localPlaces as any[]).find((p) => String(p.id) === TEST_ID)
+  : null;
 
 type ViewMode = "list" | "map";
 
 export default function HomePage() {
-  // View & interaction state (unchanged)
   const [userLoc, setUserLoc] = useState<{ lat: number; lng: number } | null>(null);
   const [query, setQuery] = useState("");
   const [selectedCat, setSelectedCat] = useState<CoreCat | "All">("All");
   const [view, setView] = useState<ViewMode>("list");
 
-  // === SOURCE OF TRUTH: places ===
-  // Start with local JSON so we always render; then upgrade to Supabase if it returns rows.
   const [places, setPlaces] = useState<Place[]>(
     Array.isArray(localPlaces) ? (localPlaces as any as Place[]) : []
   );
 
-  // Fetch from Supabase (read-only; preserves all downstream behavior)
   useEffect(() => {
     let mounted = true;
+
     (async () => {
       try {
+        if (!supabase) throw new Error("Supabase client is not initialized");
+
         const { data, error } = await supabase
           .from("places")
           .select(
@@ -40,24 +45,16 @@ export default function HomePage() {
         if (error) throw error;
         if (!mounted || !data || data.length === 0) return;
 
-        // Normalize to Place (keep current contracts intact)
         const normalized: Place[] = data.map((r: any) => ({
-          // id now numeric per your schema change
-          id: typeof r.id === "number" ? r.id : Number(r.id),
+          id: typeof r.id === "number" ? r.id : String(r.id ?? ""),
           name: r.name ?? "",
           address: r.address ?? null,
           city: r.city ?? null,
           state: r.state ?? null,
           category: r.category ?? null,
-          lat:
-            r.lat === null || r.lat === undefined || r.lat === ""
-              ? null
-              : Number(r.lat),
-          lng:
-            r.lng === null || r.lng === undefined || r.lng === ""
-              ? null
-              : Number(r.lng),
-          imageUrl: null, // still using a placeholder in the row component for V1
+          lat: r.lat == null || r.lat === "" ? null : Number(r.lat),
+          lng: r.lng == null || r.lng === "" ? null : Number(r.lng),
+          imageUrl: null,
           opens_at: r.opens_at ?? null,
           closes_at: r.closes_at ?? null,
           links: {
@@ -66,50 +63,57 @@ export default function HomePage() {
             website: r.website ?? null,
             tiktokSearch: null,
           },
-          // Accept either text[] or string like "{A,B}" from CSV; normalize to string[]
           subcategories: Array.isArray(r.subcategories)
             ? r.subcategories
             : typeof r.subcategories === "string" && r.subcategories.trim().startsWith("{")
-            ? r.subcategories
-                .replace(/[{}]/g, "")
-                .split(",")
-                .map((s: string) => s.trim())
-                .filter(Boolean)
+            ? r.subcategories.replace(/[{}]/g, "").split(",").map((s: string) => s.trim()).filter(Boolean)
             : [],
-          dogFriendly: "yes", // site-wide default (we don't show a pill)
+          dogFriendly: "yes",
         }));
 
-        setPlaces(normalized);
+        let merged = normalized;
+        if (TEST_FROM_LOCAL) {
+          const idx = merged.findIndex((p) => String(p.id) === TEST_ID);
+          if (idx >= 0) {
+            merged = [
+              ...merged.slice(0, idx),
+              { ...(TEST_FROM_LOCAL as any), id: TEST_ID },
+              ...merged.slice(idx + 1),
+            ];
+          } else {
+            merged = [{ ...(TEST_FROM_LOCAL as any), id: TEST_ID }, ...merged];
+          }
+        }
+
+        setPlaces(merged);
       } catch (e) {
-        // Quietly keep local JSON if Supabase fetch fails
         console.warn("Supabase fetch failed; using local data", e);
       }
     })();
+
     return () => {
       mounted = false;
     };
   }, []);
 
-  // === FILTER PIPELINE (unchanged order) ===
-
-  // 1) open now (Detroit)
   const openNow = useMemo(() => {
-    return places.filter((p) =>
-      isOpenNow(p.opens_at, p.closes_at, { timeZone: "America/Detroit" })
+    const filtered = places.filter((p) =>
+      isOpenNow(p.opens_at, p.closes_at, { id: String(p.id) })
     );
+
+    if (!filtered.some(p => String(p.id) === TEST_ID) && TEST_FROM_LOCAL) {
+      return [{ ...(TEST_FROM_LOCAL as any), id: TEST_ID } as any, ...filtered];
+    }
+
+    return filtered;
   }, [places]);
 
-  // 2) search
   const searched = useMemo(() => {
     const q = query.trim().toLowerCase();
     if (!q) return openNow;
+
     return openNow.filter((p) => {
-      const hay = [
-        p.name,
-        p.address,
-        p.category,
-        ...(p.subcategories || []),
-      ]
+      const hay = [p.name, p.address, p.category, ...(p.subcategories || [])]
         .filter(Boolean)
         .join(" ")
         .toLowerCase();
@@ -117,7 +121,6 @@ export default function HomePage() {
     });
   }, [openNow, query]);
 
-  // 3) category
   const visible = useMemo(() => {
     if (selectedCat === "All") return searched;
     return searched.filter((p) => p.category === selectedCat);
@@ -157,7 +160,6 @@ export default function HomePage() {
         </div>
 
         <div className="mb-4">
-          {/* IMPORTANT: CategoryChips still gets the 'searched' list */}
           <CategoryChips
             places={searched}
             selected={selectedCat}
@@ -174,7 +176,7 @@ export default function HomePage() {
         {view === "list" ? (
           <div className="grid gap-3">
             {visible.map((p) => (
-              <PlaceCardRow key={p.id} place={p} userLoc={userLoc} />
+              <PlaceCardRow key={String(p.id)} place={p} userLoc={userLoc} />
             ))}
           </div>
         ) : (
